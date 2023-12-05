@@ -1,0 +1,29 @@
+.select {
+    margin-bottom: 20px; /* מרווח תחתון כדי ליצור מראה פרוש */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* מילוי מלא של האב ג'ירות */
+    margin-bottom: 70px;
+    margin-top: 10px;
+  
+  }
+  
+  /* סגנון בעת מקבל את המיקוד */
+  select:focus {
+    outline: 2px solid #3498db;
+    border-color: #3498db;
+  }
+  label {
+    font-size: 25px;
+  }

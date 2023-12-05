@@ -1,0 +1,10 @@
+.taskContainer {
+    color: yellow;
+    border: 2px solid black;
+    background: #2e968c;
+    width: 600px;
+    padding: 15px;
+    font-size: x-large;
+    margin: 4px;
+    border-radius: 10px;
+  }

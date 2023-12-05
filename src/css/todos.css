@@ -1,0 +1,18 @@
+.enterNewTask {
+    border: 1px solid black;
+    position: fixed;
+    top: 90px; /* כאן תוכל להתאים את המרווח מלמעלה */
+    right: 40px; /* וכאן את המרווח משמאלה */
+    background-color: #fff; /* רקע של הגלוי על מנת שיהיה קריא */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(231, 154, 154, 0.1);
+    font-size: medium;
+}
+h1 {
+    color: rgb(122, 117, 95);
+}
+
+.title {
+    margin-bottom: 30px;
+}
