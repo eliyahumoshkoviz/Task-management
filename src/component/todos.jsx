@@ -100,7 +100,7 @@ export default function Todos() {
                 <Search clone={clone} setArreyTodos={setArreyTodos} />
 
                 {arreyTodos.map((item) => (
-                    <Task obj={item} setArreyTodos={setArreyTodos} />
+                    <Task obj={item} setArreyTodos={setArreyTodos} setClone={setClone}/>
                 ))}
             </div>
         )

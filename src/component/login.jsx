@@ -25,9 +25,6 @@ const Login = ({ setUse }) => {
     const checkData = async (data) => {
         try {
             const users = await getData();
-            setUse(data);
-            console.log(data);
-
             const isUserValid = users.some(
                 ({ username, website }) =>
                     username === data.userName && website === data.password
@@ -37,6 +34,7 @@ const Login = ({ setUse }) => {
                     username === data.userName && website === data.password
             );
             isUserValid && index !== -1 && setUse(users[index]);
+            
             isUserValid && index !== -1
                 ? navigate("home/" + users[index].id)
                 : alert(

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-export default function Task({obj,setArreyTodos}) {
+export default function Task({obj,setArreyTodos,setClone}) {
 
     const [editMode, setEditMode] = useState({ id: null, title: "" });
 
@@ -29,6 +29,11 @@ export default function Task({obj,setArreyTodos}) {
                 item.id === iudex ? { ...item, [field]: newValue } : item
             )
         );
+        setClone((prevArray) =>
+        prevArray.map((item) =>
+            item.id === iudex ? { ...item, [field]: newValue } : item
+        )
+    );
     };
 
     const EditTitle = (id, title) => {
